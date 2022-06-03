@@ -1,0 +1,75 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 62.5%;
+}
+.container{
+    margin: auto ;
+    width: 90%;
+    height: 40rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background: lightgray;
+    overflow: hidden;
+}
+
+.title{
+    text-align:  center;
+    font-size: 1.8rem;
+}
+
+.select__label{
+    display: flex;
+    flex-flow: column;
+    align-items: center; 
+}
+
+.select__select{
+    background-color: gray;
+}
+
+.figure-inputs{
+    display: flex;
+    flex-flow: column;
+    width: 80%;
+    align-items: center;
+}
+
+.form{
+
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+.form__label{
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1.4rem;
+    display: flex;
+    flex-flow: column;
+
+}
+
+.result{
+    display: flex;
+    flex-flow: column;
+    align-items: center;       
+}
+
+.button{
+    width: 15rem;
+    border-radius: 1rem;
+    padding: 0.2rem;
+    background-color: gray;
+}
+.button:hover{
+    width: 16rem;
+    border-radius: 1rem;
+    padding: 0.2rem;
+    background-color: rgb(87, 86, 86);
+}

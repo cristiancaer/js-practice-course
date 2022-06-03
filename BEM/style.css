@@ -1,0 +1,101 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0.5rem;
+    
+}
+
+html{
+    font-size: 62.5%;
+    background-color: lightgray;
+}
+
+.container{
+    display: inline-flex;
+
+    flex-flow:  wrap;
+    justify-content: center;
+
+}
+.container__cards{
+    margin: 2rem;
+
+}
+.card{
+    background: white;
+    border-radius: 1.5rem;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-bottom: 5rem;
+}
+.card__thumbnail{
+    width: 40%;
+    height: 20rem;
+    background: white;
+    margin-right: 2rem;
+    border-radius: 1rem;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+.card__img{
+    height: 100%;
+    border-radius: 1rem;
+}
+
+.card__title{
+    font-family: sans-serif;
+    font-size: 3rem;
+    font-weight: normal;
+    margin-bottom: 1rem;
+}
+
+.card__text{
+    font-size: 1.4rem;
+    
+}
+
+.card__link{
+    color: black;
+    text-decoration: none;
+}
+
+.button{
+    border: none;
+    min-width: 18rem;
+    height: 5rem;
+    padding: 0 3rem;
+    font-size: 1.4rem;
+    background-color: #403cc2;
+    color: white;
+    display: inline-flex;
+    border-radius: 10rem;
+    text-decoration: none;
+    justify-content: space-between;
+    align-items: center;
+    transition: .3s ease all;
+}
+
+.button:hover{
+    text-decoration: none;
+    background-color: #211c9a;
+}
+
+.button--absolute{
+    position: absolute;
+    right: 2rem;
+    bottom: -2.5rem;
+}
+
+.button--next{
+    background-color: rgb(13, 105, 13);
+    
+}
+
+
+.button--next:hover{
+    background-color: rgb(28, 184, 28);
+}

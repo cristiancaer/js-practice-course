@@ -1,0 +1,79 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geometric figures</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+   <main class="container">
+        <H1 class="title">Geometric Figures</H1>
+        <section class="select">
+            <label for="figure-option" class="select__label">
+                <h2 class="select__title title">Choose a figure</h2>
+                <select name="figures" class="select__select" id="figure-option">
+                    <option class="select__option" value="triangle">Triangle</option>
+                    <option class="select__option" value="rectangle">Rectangle</option>
+                    <option class="select__option" value="circle">Circle</option>
+                </select>
+
+            </label>
+        </section>
+
+        <section class="figure-inputs">
+            <H2 class="figure-inputs___title title"> Fill the options</H2>
+            <section class="figure-inputs___section" id="rectangle-inputs">
+                <form class="form" action="">
+                    <label class="form__label" for="height">
+                        <span class="form__span">height [m]</span>
+                        <input class="form__input" type="number" name="height" id="height">
+                    </label>
+                    <label class="form__label" for="width">
+                        <span class="form__span" >width [m]</span>
+                        <input  class="form__input"  type="number" name="width" id="width">
+                    </label>
+                </form>
+            </section>
+
+            <section class="figure-inputs___section" id="triangle-inputs" >
+                <form class="form" action="">
+                    <label class="form__label" for="base">
+                        <span class="form__span">Base [m]</span>
+                        <input  class="form__input"  type="number" name="base" id="base">
+                    </label>
+                    <label class="form__label" for="side-a">
+                        <span class="form__span">side A [m]</span>
+                        <input  class="form__input"  type="number" name="side-a" id="side-a">
+                    </label>
+                    <label class="form__label" for="side-b">
+                        <span class="form__span">side B [m]</span>
+                        <input  class="form__input"  type="number" name="side-b" id="side-b">
+                    </label>
+                </form>
+            </section>
+            <section class="figure-inputs___section" id="circle-inputs">
+                <form class="form" action="">
+                    <label class="form__label" for="radius">
+                        <span class="form__span">Radio [m]</span>
+                        <input  class="form__input" type="number" name="radio" id="radius">
+                    </label>
+                </form>
+            </section>
+        </section>
+
+        <section class = "result" id="figure-result">
+            <input type="button" class="button" value="Get Results" onclick="getResultsBtn()">
+            <form class="form" action="">
+                <label class="form__label" for="area-result"> <span>area [m²]</span> <input type="text" id="area-result"></label>
+                <label class="form__label" for="perimeter-result"> <span>Perimeter [m]</span> <input type="text" id="perimeter-result"></label>
+        
+            </form>
+        </section>
+   </main>
+
+</body>
+<script src="./figures.js"></script>
+</html>
