@@ -1,0 +1,48 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Statistics</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Arithmetic mean, Median and Mode</h1>
+    <div class="basic-statis">
+        <section class="basic-statis__input-area">
+            <h2 class="basic-statis__subtitle"> Enter a number</h2>
+            <input type="number" name="" id="basic-statis__input-number" class="basic-statis__input">
+        </section>
+        <section class="basic-statis__input-area">
+            <h2 class="basic-statis__subtitle"> Number list</h2>
+            <p class="basic-statis__show-field" id="basic-statis__list-numbers">[]</p>
+        </section>
+        <button class="button" type="button" id="basic-statis__reset-all" onclick="resetBtn()"> 
+            <span class="button__text"> Reset</span>
+            <i class="button__icon fa-solid fa-trash-arrow-up"></i>
+        </button>
+        <section class="basic-statis__result_area">
+            <div class="statis-card">
+                <h1 class="statis-card__title">Arithmetic mean</h1>
+                <p class="statis-card__content" id="card__value-mean"></p>
+                <p class="statis-card__info" id="card__info-mean"></p>
+            </div>
+            <div class="statis-card">
+                <h1 class="statis-card__title">Median</h1>
+                <p class="statis-card__content" id="card__value-median">value</p>
+                <p class="statis-card__info" id="card__info-median">[]</p>
+            </div>
+            <div class="statis-card">
+                <h1 class="statis-card__title">Mode</h1>
+                <p class="statis-card__content" id="card__value-mode"></p>
+                <p class="statis-card__info " id="card__info-mode"></p>
+            </div>
+        </section>
+    </div>
+    </div>
+    <script src="https://kit.fontawesome.com/9057d973c9.js" crossorigin="anonymous"></script>
+    <script src="./basic_statistics.js"></script>
+    <script src="./main.js"></script>
+</body>
+</html>
