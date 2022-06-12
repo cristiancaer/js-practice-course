@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discount Price</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div class="discount-price">
+        <h1 class="discount-price__title">
+            Discount Price Calculator
+        </h1>
+        <section class="discount-price__block">
+            <form action="" class="discount-price__block">
+                <label for="original-price" class="discount-price__label">Insert original price <i class=" discunt-price__icon fa-solid fa-circle-dollar-to-slot"></i></label>
+                <input id='original-price' type="number" class="discount-price__input">
+                
+                <label for="discount" class="discount-price__label">Insert discount </i></label>
+                <input id="discount" type="number" class="discount-price__input" placeholder="[0-100]%">
+    
+                <label for="coupon" class="discount-price__label">Insert coupon</label>
+                <input id="coupon" type="number" class="discount-price__input" placeholder="[0-100]%">
+                
+                <a class="button" onclick="onClickGetDiscount()">
+                    <span class="button__text">Get result</span>
+                    <i class=" button__icon fa-solid fa-magnifying-glass-dollar"></i>
+                </a>
+            </form>
+        </section>
+        <section class="discount-price__block">
+            <label for="result-discount" class="discount-price__label"> Price with discount</label>
+            <p id='result-discount' class="discount-price__result"></p>
+            <label for="result-total" class="discount-price__label"> Price with discount + coupon</label>
+            <p id="result-total" class="discount-price__result"></p>
+            <label for="result-saving" class="discount-price__label"> Total saving</label>
+            <p id="result-saving" class="discount-price__result"></p>
+        </section>
+    </div>
+       
+    
+   
+    <script src="https://kit.fontawesome.com/9057d973c9.js" crossorigin="anonymous"></script>
+    <script src="./discount_price.js"></script>
+</body>
+</html>

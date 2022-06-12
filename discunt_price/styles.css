@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    box-sizing:  border-box;
+}
+html{
+    font-size: 62.5%;
+    
+}
+
+.discount-price{
+    background-color: #2d572c;
+    width: 30%;
+    margin: auto;
+    display: flex;
+    flex-flow: column ;
+    border: solid black ;
+    border-radius: 2rem;
+    overflow: auto;
+
+}
+.discount-price *{
+    margin: 00.2rem;
+}
+.discount-price__title{
+    font-size: 2.4rem;
+    text-align:  center;
+    padding: 2rem;
+}
+.discount-price__block{
+    display: flex;
+    flex-flow: column;
+    margin: 2rem;
+    align-items: center;
+}
+.discount-price__label{
+    font-size: 2rem;
+    text-align: center;
+    font-weight: bold;
+}
+.discount-price__input{
+    border-radius: 0.5rem;
+
+}
+.discount-price__result{
+    width: 50%;
+    height: 2rem;
+    background-color: black;
+    color: white;
+    font-size: 1.8rem;
+    border-radius: 0.5rem;
+}
+.button{
+    width: 80%;
+    height: 4rem;
+    margin: 2rem;
+    /* padding: 1rem ; */
+    display: flex;
+    justify-content: center;
+    border-radius: 1rem;
+    background-color: gray;
+}
+.button__text{
+    font-size: 2.5rem;
+    font-weight: bold;
+}
