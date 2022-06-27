@@ -1,0 +1,43 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-10">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add salaried</title>
+    <link rel="stylesheet" href="./styles.css">
+
+</head>
+<body>
+    <div class="container">
+        <div class="add-salaried">
+            <h1 class="title add-salaried__title">Add new salaried</h1>
+            <form action="#" class="add-salaried__form">
+                <label for="add-salaried__name" class="add-salaried__label">Name</label>
+                <input type="text" name="" id="add-salaried__name" class="add-salaried__input" required pattern="[a-z]{4,21}" title="4-21 lowercase letters"> <span class="add-salaried__val-icon"></span>
+                
+                <label for="add-salaried__profession" class="add-salaried__label"  >Profession</label>
+                <input type="text" name="" id="add-salaried__profession" class="add-salaried__input" required pattern="[a-z]{4,21}" title="4 to 21 lowercase letters"><span class="add-salaried__val-icon"></span>
+                
+                <label for="add-salaried__country" class="add-salaried__label"  >Country</label>
+                <input type="text" name="" id="add-salaried__country" class="add-salaried__input" required pattern="[a-z]{4,21}" title="4 to 21 lowercase letters"><span class="add-salaried__val-icon"></span>
+            
+                <label for="add-salaried__salary" class="add-salaried__label">Salary</label>
+                <input type="number" name="" id="add-salaried__salary" class="add-salaried__input" required minlength="2" title="more than 2 digits" placeholder="Dollars" ><span class="add-salaried__val-icon"></span>
+                <div class="add-salaried__buttons">
+                    <button class="button" id="add-salaried__button-new" onclick="addNewSalaried()">
+                        <a class="button__text"> new</a>
+                        <i class="button__icon "></i>
+                    </button>
+                    <a href="./index.html" class="link">
+                        <span class="link__text">Comeback</span>
+                        <i class="link__icon fa-solid fa-left"></i>
+                    </a>
+                </div>
+    
+            </form>
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/9057d973c9.js" crossorigin="anonymous"></script>
+    <script src="./add_salaried.js"></script>
+</body>
+</html>

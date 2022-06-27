@@ -1,0 +1,55 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salary statistics</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <div class="container">
+    <div class="salary-statis">
+        <h1 class="title salary-statis__title"> Salary analysis</h1>
+        <a href="./add_salaried.html" class="link">
+            <span class="link__text">Add salaried</span>
+            <i class="link__icon fa-solid fa-address-card"></i>
+        </a>
+        <select name="" class= "salary-statis__select" id="salary-statis__select">
+            <option class="salary-statis__option" value="">Filter by</option>
+            <option class="salary-statis__option" value="profession">Profession</option>
+            <option class="salary-statis__option" value="country">Country</option>
+        </select>
+        <input class='salary-statis__filter' list="salary-statis__list-options"  id="salary-statis__filter-by">
+        <datalist id="salary-statis__list-options" ></datalist>
+        <h1 class="subtitle salary-statis__subtitle"> Basic statics</h1>
+        
+        <div class="salary-statis__outputs">
+            <div class="output">
+                <p class="output__name"> Mean</p>
+                <p class="output__value" id="salary-statis__mean">value</p>
+            </div>
+            
+            <div class="output">
+                <p class="output__name">median</p>
+                <p class="output__value" id="salary-statis__median">median</p>
+            </div>
+
+            <div class="output">
+                <p class="output__name"> mode</p>
+                <p class="output__value" id="salary-statis__mode">value</p>
+            </div>
+
+            <div class="output">
+                <p class="output__name"> best 1</p>
+                <p class="output__value" id="salary-statis__best1">value</p>
+            </div>
+        </div>
+    </div>
+  </div>
+  
+  <script src="https://kit.fontawesome.com/9057d973c9.js" crossorigin="anonymous"></script>
+  <script src="./add_salaried.js"></script>
+  <script src="/basic_statistics/basic_statistics.js"></script>
+  <script src="./main.js"></script>
+</body>
+</html>
