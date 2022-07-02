@@ -63,26 +63,6 @@ html{
     text-decoration: none;
 }
 
-.button{
-    border: none;
-    min-width: 18rem;
-    height: 5rem;
-    padding: 0 3rem;
-    font-size: 1.4rem;
-    background-color: #403cc2;
-    color: white;
-    display: inline-flex;
-    border-radius: 10rem;
-    text-decoration: none;
-    justify-content: space-between;
-    align-items: center;
-    transition: .3s ease all;
-}
-
-.button:hover{
-    text-decoration: none;
-    background-color: #211c9a;
-}
 
 .button--absolute{
     position: absolute;
