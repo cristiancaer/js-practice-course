@@ -5,6 +5,8 @@
     --black-2: rgba(0, 0, 0, 0.432);
     --slide-content: rgba(0, 0, 0, 0.671);
     --header: #191b1d;
+    --button: var(--header);
+    --hover-button: var(--nav)
   }
 *{
     padding: 0;
@@ -101,6 +103,26 @@ header{
     background: linear-gradient(to top right, transparent 50%, var(--gray) 51%);
     margin-bottom: 36px;
   } */
+  .button{
+    border: none;
+    min-width: 18rem;
+    height: 5rem;
+    padding: 0 3rem;
+    font-size: 1.4rem;
+    background-color: var(--button);
+    color: white;
+    display: inline-flex;
+    border-radius: 10rem;
+    text-decoration: none;
+    justify-content: space-between;
+    align-items: center;
+    transition: .3s ease all;
+}
+
+.button:hover{
+    text-decoration: none;
+    background-color: var(--hover-button);
+}
 /* ------------------------------------------------------------------------------------------------ */
 @media screen and (max-width: 900px) {
     .nav__workshops {
