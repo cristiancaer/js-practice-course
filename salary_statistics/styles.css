@@ -86,7 +86,10 @@
     border:  solid black 1px ;
 }
 .add-salaried__buttons{
-    margin-top: 1rem    ;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+    margin-top: 1rem;
     display: flex;
 }
 
