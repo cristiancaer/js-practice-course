@@ -108,6 +108,7 @@ header{
     min-width: 18rem;
     height: 5rem;
     padding: 0 3rem;
+    margin: 1rem;
     font-size: 1.4rem;
     background-color: var(--button);
     color: white;

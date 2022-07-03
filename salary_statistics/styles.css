@@ -1,63 +1,20 @@
-*{
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-}
-
-html{
-    font-size: 62.5%;
-    background-color: aliceblue;
-}
-
 .container{
-    padding-top: 3rem;
+    padding-top: 1rem;
     width: 60%;
-    background-color: lightgray;
     margin: auto;
 }
-.title{
-    font-size: 4rem;
-    font-weight: bolder;
-    padding: 0.5rem;
-    margin: 0.5rem;
-}
+
 .subtitle{
     font-size: 3rem;
     font-weight: bolder;
     padding: 0.5rem;
     margin: 0.5rem;
 }
-.link{
-    color: black;
-    font-size: 1.6rem;
+.link{  
     text-decoration: none;
-    padding: 1rem;
-    width: 20%;
-    background-color: rgb(146, 140, 140);
-    border: solid 0.1rem black;
     margin: 1rem;
-    display: flex;
-    flex-flow: row;
-    justify-content: space-around;
-    border-radius: 1rem;
-}
-.button{
-    color: black;
-    font-size: 1.6rem;
-    padding: 1rem;
-    width: 20%;
-    background-color: rgb(146, 140, 140);
-    border: solid 0.1rem black;
-    margin: 1rem;
-    display: flex;
-    flex-flow: row;
-    justify-content: space-around;
-    border-radius: 1rem;
 }
 
-.link__text{
- color: black;
-}
 .salary-statis{
     display: flex;
     flex-flow: column;
@@ -91,12 +48,13 @@ html{
     justify-content: center;
 }
 .output__name{
+    color: white;
     padding: 0.5rem;
     font-size: 1.6rem;
     position: absolute;
     left: -0.5rem;
     top: -1.8rem;
-    background-color: lightgray;
+    background-color: black;
     border-radius: 0.5rem;
 }
 .output__value{
